@@ -1,0 +1,63 @@
+*{
+	padding: 0;	
+}
+	
+html{
+}
+
+body {
+    background-image: url(./img/bg2.jpg);
+    background-size: cover;
+    color: green;
+    background-repeat: no-repeat;
+	height: 780px;
+}
+
+.canvas {
+	top: 40px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    padding: 10px;
+    border: 3px solid yellow;
+	border-radius: 10px;
+	background-color: rgb(127, 255, 0, 0.4);
+}
+
+.tocke {
+    position: absolute;
+	left: 36%;
+    top: 440px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid green;
+	border-radius: 100px;
+	background-color: rgb(255, 255, 0, 0.9);
+
+}
+
+.gold {
+    height: 32px;
+	margin-left: 24%;
+	margin-top: 30%;
+    width: auto;
+}
+
+.restart {
+    position: relative;
+	width: 85px;
+	height: 30px;
+    background-color: green;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 80%;
+	left: 5%;
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+	transform: scale(1.20);
+}
