@@ -15,7 +15,7 @@ Swal.fire({
 
 
 function drawIt() {
-	var WIDTH;
+    var WIDTH;
     var HEIGHT;
     var x = 150;
     var y = 150;
@@ -98,7 +98,7 @@ function timer() {
 
     function draw() {
         clear();
-        circle(x, y, 10);
+        circle(x, y, 7);
         if (rightDown) {
             if ((paddlex + paddlew) < WIDTH) {
                 paddlex += 7;
@@ -149,7 +149,7 @@ function timer() {
         }
         x += dx;
         y += dy;
-        if (tocke == 16) {
+        if (tocke == 20) {
             gamewon();
             if (spc == 1) {
                 snd3.play();
@@ -214,7 +214,7 @@ function timer() {
     $(document).keyup(onKeyUp);
 
     function initbricks() { //dolzina in visina stranskih palc
-        NROWS = 4; 
+        NROWS = 5; 
         NCOLS = 4;
         BRICKWIDTH = (WIDTH / NCOLS) - 1;
         BRICKHEIGHT = 15;
