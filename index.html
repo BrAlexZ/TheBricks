@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<title>The Bricks</title>
+		<link rel="stylesheet" href="css.css">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon/coin.png" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script type="text/javascript">
+        function togglePlay() {
+            var myAudio = document.getElementById("myAudio");
+            return myAudio.paused ? myAudio.play() : myAudio.pause();
+        };</script>
+	</head>
+	<body onload="drawIt()">
+		<div class="border">
+			<h1>
+				Golden Rush
+			</h1>
+			<input type="checkbox" id="music" class="toggle-button" value="sound" onclick="togglePlay()">
+			<div class="canvas"> <canvas id="canvas" width="400" height="400"></canvas>
+				<div class="tocke">
+					<img src="img/coin.png" class="gold"> : <mark id="tocke">0</mark>
+					<div><button class="restart" onclick="refreshPage();">TRY AGAIN</button></div>
+				</div><mark id="timer">00:00</mark>
+				<div>
+					<button class="credits" type="button" onclick="credits()"></button>
+					
+				</div>
+			</div>
+		</div>
+	<audio id="myAudio" src="audio/Brasic.mp3">
+    </audio>
+
+	<script src="js/main.js"></script>
+	</body>
+</html>
