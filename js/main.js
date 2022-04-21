@@ -43,26 +43,26 @@ function drawIt() {
     var temp;
     var gover = true;
     var gameWin = false;
-	var sec;
+    var sec;
     var sek;
     var min;
     var intTimer;
     var Timer;
-	var coin = new Image();
+    var coin = new Image();
     coin.src = "img/coin.png"
 
-	function timer() {
-			if (start == true) {
-				sec++;
-				sek = ((sek = (sec % 60)) > 9) ? sek : "0" + sek;
-				min = ((min = Math.floor(sec / 60)) > 9) ? min : "0" + min;
-				Timer = min + ":" + sek;
-				$("#timer").html(Timer);
-			} else {
-				sec = 0;
-				$("#timer").html(Timer);
-			}
+function timer() {
+		if (start == true) {
+			sec++;
+			sek = ((sek = (sec % 60)) > 9) ? sek : "0" + sek;
+			min = ((min = Math.floor(sec / 60)) > 9) ? min : "0" + min;
+			Timer = min + ":" + sek;
+			$("#timer").html(Timer);
+		} else {
+			sec = 0;
+			$("#timer").html(Timer);
 		}
+	}
 
     function ball() {
         ctx = $('#canvas')[0].getContext("2d");
