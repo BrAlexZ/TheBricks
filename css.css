@@ -10,7 +10,6 @@ html{
 body {
 	margin-top: 35px;
 	background: url(./img/bg2.jpg);
-	filter: blur(8px);
    	background-size: cover;
   	color: green;
   	background-repeat: no-repeat;
